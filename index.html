@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Outfit;
+        background-color: hsl(217, 54%, 11%);
+        /* font-size: 18px; */
+      }
+      .card {
+        margin: auto;
+        margin-top: 5%;
+        background-color: hsl(216, 50%, 16%);
+        width: 21rem;
+        padding: 18px;
+        border-radius: 16px;
+      }
+      .card-img {
+        width: 100%;
+      }
+      .card-title {
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        margin: 15px 0;
+        font-size: 20px;
+      }
+      .card-content {
+        color: hsl(215, 51%, 70%);
+        margin: 15px 0;
+      }
+      .card-price {
+        color: hsl(178, 100%, 50%);
+      }
+      .card-expired-day {
+        color: hsl(215, 51%, 70%);
+        display: flex;
+        align-items: center;
+      }
+      .card-detail {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+      }
+      .card-creator {
+        margin: 20px 0;
+      }
+      .card-creator-img {
+        width: 22px;
+        margin-right: 5px;
+        border: hsl(0, 0%, 100%) 1px solid;
+        border-radius: 50%;
+      }
+      .card-footer {
+        border-top: hsl(215, 32%, 27%) 2px solid;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/image-equilibrium.jpg" alt="" class="card-img" />
+      <div class="card-title">Equilibrium #3429</div>
+      <div class="card-content">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+      <div class="card-detail">
+        <div class="card-price">
+          <img src="./images/icon-ethereum.svg" alt="" />
+          0.041 ETH
+        </div>
+        <div class="card-expired-day">
+          <img src="images/icon-clock.svg" style="display: inline" />
+          <div>3 days left</div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <img src="./images/image-avatar.png" class="card-creator-img" />
+        <div class="card-creator">
+          <span style="color: hsl(215, 51%, 70%)">Creation of </span
+          ><span style="color: hsl(0, 0%, 100%)">Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Rakunn</a>.
+    </div>
+  </body>
+</html>
